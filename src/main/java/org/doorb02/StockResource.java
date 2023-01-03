@@ -1,4 +1,4 @@
-package doorb02;
+package org.doorb02;
 
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;

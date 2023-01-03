@@ -1,4 +1,4 @@
-package doorb02;
+package org.doorb02;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

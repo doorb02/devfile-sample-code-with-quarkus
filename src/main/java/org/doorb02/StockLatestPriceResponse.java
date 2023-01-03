@@ -1,4 +1,4 @@
-package doorb02;
+package org.doorb02;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
