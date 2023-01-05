@@ -8,12 +8,12 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 
-@Path("stocks")
+@Path("/stocks")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class StockResource {
 
-    @Path("{symbol}/latestPrice")
+    @Path("/{symbol}/latestPrice")
     @GET
     public Response stock(@PathParam("symbol") String symbol) throws IOException {
         Stock stock = YahooFinance.get(symbol);
