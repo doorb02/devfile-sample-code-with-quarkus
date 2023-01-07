@@ -11,20 +11,20 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 
-@Path("/v1")
+@Path("/v1/greeting")
 public class GreetingResource {
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "Hello RESTEasy";
+        return "Hello RESTEasy v1 greeting";
     }
 
     @Path("/goodbye")
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String goodbye() {
-        return "Goodbye RESTEasy";
+        return "Goodbye RESTEasy v1 greeting";
     }
 
 
