@@ -11,7 +11,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 
-@Path("/v1/hello")
+@Path("/v1")
 public class GreetingResource {
 
     @GET
