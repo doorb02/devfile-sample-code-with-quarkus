@@ -11,7 +11,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 
-@Path("/hello")
+@Path("/v1/hello")
 public class GreetingResource {
 
     @GET
@@ -19,6 +19,14 @@ public class GreetingResource {
     public String hello() {
         return "Hello RESTEasy";
     }
+
+    @Path("/goodbye")
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    public String goodbye() {
+        return "Goodbye RESTEasy";
+    }
+
 
     @Path("/{symbol}/latestPrice")
     @GET
